@@ -27,7 +27,7 @@ orgs.newOrg('eclipse-buildship') {
         default_workflow_permissions: "write",
       },
       webhooks: [
-        orgs.newRepoWebhook('https://hooks.slack.com/services/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') {
+        orgs.newRepoWebhook('https://hooks.slack.com/services/T0316GWAW/B0458MSEV/*') {
           content_type: "json",
           events+: [
             "commit_comment",
