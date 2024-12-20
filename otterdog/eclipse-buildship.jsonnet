@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-buildship') {
+orgs.newOrg('tools.buildship', 'eclipse-buildship') {
   settings+: {
     description: "",
     name: "Eclipse Buildship: Eclipse Plug-ins for Gradle",
