@@ -9,6 +9,11 @@ orgs.newOrg('tools.buildship', 'eclipse-buildship') {
       actions_can_approve_pull_request_reviews: false,
     },
   },
+  secrets+: [
+    orgs.newOrgSecret('DEVELOCITY_API_TOKEN') {
+      value: "pass:bots/tools.buildship/develocity.eclipse.org/api-token",
+    },
+  ],
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/buildship/github-webhook/') {
       content_type: "json",
